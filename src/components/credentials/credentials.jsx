@@ -10,11 +10,12 @@ export default class Credentials extends Component {
     render() {
       function clickHandler(e) {
         e.preventDefault();
+        console.log('123');
       }
       return (
-        <button href="#" className="credentials" onClick={clickHandler}>
+        <div href="#" className="credentials" onClick={clickHandler}>
           <p>Developer: {this.state.firstName} {this.state.lastName}</p>
-        </button>
+        </div>
       );
     }
 }
